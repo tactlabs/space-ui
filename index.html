@@ -3,7 +3,21 @@
 <head>
 <title>ASTRANAUT</title>
 <style>
-.w3-button {width:150px;}
+
+  .container { 
+  height: 200px;
+  position: relative;
+  padding-bottom: 200rem;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 body {
   background-color: #1a1720;
 
@@ -155,9 +169,19 @@ body {
 
   </div>
 </div>
-<div class="w3-container">
-<p><button class="w3-button w3-deep-purple">Deep Purple</button></p>
+<form action="redirect.html" method="get" id="nameform">
+<div class="container">
+  <div class="center">
+    <button type="submit" form="nameform" value="Submit">CLICK TO ENTER THE SPACE</button>
+  </div>
 </div>
+</form>
+
+
+
+
+
+
 <script>
 (function ($) {
   $(function () {
